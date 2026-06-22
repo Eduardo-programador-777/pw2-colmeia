@@ -1,3 +1,5 @@
+// Davi Ribeiro Calado e Eduardo Marassatti Sassone 2ºA.I
+
 package br.com.etechoracio.colmeia.model;
 
 public class Rainha extends Abelha {
@@ -17,6 +19,10 @@ public class Rainha extends Abelha {
     @Override
     public double calcularConsumoDiario() {
         return 20 + (ovosPorDia * 0.01);
+    }
+
+    public void exibirStatus(){
+        System.out.println(getNome() + ": Não possui capacidades especiais.");
     }
 }
 

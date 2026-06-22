@@ -1,6 +1,10 @@
+// Davi Ribeiro Calado e Eduardo Marassatti Sassone 2ºA.I
+
 package br.com.etechoracio.colmeia.model;
 
-public class Zangao extends Abelha{
+import br.com.etechoracio.colmeia.interfaces.Defensor;
+
+public class Zangao extends Abelha implements Defensor {
 
     private int voosAcasalamento;
 
@@ -17,6 +21,10 @@ public class Zangao extends Abelha{
     @Override
     public double calcularConsumoDiario() {
         return 15 + (voosAcasalamento * 3);
+    }
+
+    public void defenderColmeia() {
+        System.out.println(getNome() + ": Defendendo a entrada da colmeia.");
     }
 }
 
